@@ -1,61 +1,249 @@
 <!DOCTYPE html>
 <html>
-<title>Online HTML Editor</title>
 <head>
-    <header>
-        <img src= "https://avatars.githubusercontent.com/u/90051234?s=400&u=a4f457332ef8c2da183059b0288e905bfcea6972&v=4"> 
-        <h1> Ben Jenon C. Alpuerto</h1>
-        <p> Argentina Calauag, Naga City</p>
-        <p> 09286563980 </p>
-        <p> <b><i> "You'll never know if you dont try"</i></b></p>
-    </header>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: #1d2b3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    max-width: 1200px;
+    background: white;
+    margin: 50px;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    border-radius: 50px;
+}
+.top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+    background-color:#1d2b3a;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.image{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.box{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ProfileText{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.ProfileText h3{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: white;
+
+}
+.ProfileText h3 span{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    top: -10px;
+    color:#00dfc4;
+}
+.contentbox{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px; 
+} 
+.contentbox h3{
+    border-left: 4x solid #ff8bb3;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.contentbox ul li{
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+}
+.interest{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.rightside{
+    padding-left: 40px;
+}
+
+.ref{
+    display: flex;
+    gap: 10px;
+    font-size: small;
+    text-align: center;
+}
+
+.pers1:hover{
+    transform: scale(1.2);
+    transform: all 0.3s;
+    transition: 0.2s;
+}
+
+.pers2:hover{
+    transform: scale(1.2);
+    transform: all 0.3s;
+    transition: 0.2s;
+}
+.pers3:hover{
+    transform: scale(1.2);
+    transform: all 0.3s;
+    transition: 0.2s;
+}
+.pers1{
+    border: 2px solid #1d2b3a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.pers2{
+    border: 2px solid #1d2b3a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.pers3{
+    border: 2px solid #1d2b3a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+</style>
 </head>
 <body>
-    <hr style="width:100%">
-<div>
-    <h2> About Me</h1>
-    <p>  im a sleeper  i love to sleep  sleeping is my favorite  hobby beside sleeping</p>
-</div>
-<div>
-    <h2> Work Experience</h2>
-    <ul>
-        <li> 2 years of work experience in youtube</li>
-        <li> Managing Non-Fungible Token assets </li>
-    </ul>
-</div>
- <div>
-    <h2> Educational History</h2>
-    <ul> 
-        <li> University Of Saint Anthony </li>
-        <li> Naga College Foundation</li>
-        <li> Ateneo De Naga (currently) </li>
-    </ul>
-</div>
-<div>
-    <h2> General Technical Skills </h2>
-    <table style="width:80%">
-  <tr>
-    <td>Communication skills</td>
-    <td>Desired Expeirence in C++ and HTML</td>
-    <td>Organizational know-how</td>
-  </tr>
-  <tr>
-    <td>Problem-solving abilities</td>
-    <td>Software proficiency</td>
-    <td>Multilingualism </td>
-  </tr>
-</table>
-</div>
-<div>
-    <h2> Character Referencee</h2>
-    <table style="width:80%">
-    <tr>
-        <th> @maformaleza@gbox.adnu.edu.ph</th>
-        <th> @mmosna@gbox.adnu.edu.ph</th>
-        <th> @fzolano@gbox.adnu.edu.ph</th>
-        
-    </tr>
-</div>
-    <a href="contact.html"> Contact me </a>
+    <div class="container">
+        <div class="top">
+            <div class="image">
+                <div class="box">
+                    <img src="https://avatars.githubusercontent.com/u/90051234?v=4">
+                </div>
+            </div>
+            <div class="ProfileText">
+                <h3> Ben Jenon  <br> Alpuerto<br><span>Web Developer</span> </h3>
+            </div>
+        </div>
+        <div class="contentbox">
+            <div class="leftslide">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">+09286563980</span>
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">balpuerto@gbox.adnu.edu.ph</span>
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">Argentina Calauag, Naga City</span>
+                    </li>
+                    <li>
+                        <a href="contact.html"> Contact me </a>
+                    </li>
+                        
+                </ul>
+                <h3>Education</h3>
+                    <ul class="education">
+                        <li>
+                            <h5>University of Saint Anthony</h5>
+                        </li>
+                        <li>
+                            <h5>Naga College Foundation</h5>
+                        </li>
+                        <li>
+                            <h5>Ateneo De Naga(Current)</h5>
+                        </li>
+                    </ul>
+                    <h3>Language</h3>
+                    <ul class="Language">
+                        <li>English</li>
+                        <li>Tagalog</li>
+                    </ul>
+                    <h3>Interest</h3>
+                    <ul class="interest">
+                        <li><i>Gaming</i></li>
+                        <li><i>Editing</i></li>
+                        <li><i>Travel</i></li>
+                        <li><i>Camping</i></li>
+                    </ul>
+            </div>
+            <div class="rightside">
+                <div class="AboutMe">
+                    <h3>About Me</h3>
+                    <p>My Name is Ben Jenon Alpuerto im currently  learning  different kinds of  programming  languages and my main language is C++ and currently  learning HTML and CSS.</p> 
+                </div>
+            <div class="AboutMe">
+                <h3>My Skills</h3>
+                <ul class="skils">
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>HTML and CSS</li>
+                    <li>JavaScript</li>
+                    <li>After Effects</li>
+                    <li>Photoshop</li>
+                    <li>Premiere Pro</li>
+                </ul>
+                </div>
+                <h3>Reference</h3>
+                <div class="ref">
+                    <div class="pers1">
+                    <a href="https://www.linkedin.com/in/joshuamartinez/">Joshua Martinez</a>
+                    </div>
+                    <div class="pers2">
+                    <a href="https://www.linkedin.com/in/adrian-leo-pajarillo-88a928206/">Adrian Leo Pajarillo</a>
+                    </div>
+                    <div class="pers3">
+                    <a href="https://www.linkedin.com/in/emontealegre">Estrella Montealegre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
+<button type=“button”><a href=“https://www.linkedin.com/in/emontealegre”>Estrella Montealegre</a></button>
